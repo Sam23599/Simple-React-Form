@@ -14,12 +14,14 @@ router.post('/', async (req, res) => {
         }
 
         const salt = await bcrypt.genSalt(Number(process.env.SALT));
-        const hashPassword = await bcrypt.hash(req.body.password,salt);
+        const hashPassword = await bcrypt.hash(req.body.password, salt);
 
-        await new User({...req.body, password:hashPassword}).save();
-        req.status(201).send({message: "User created"});
+        await new User({ ...req.body, password: hashPassword }).save();
+        req.status(201).send({ message: "User created" });
 
     } catch (error) {
-        res.status(500).send({message: "Internal Server error"})
+        res.status(500).send({ message: "Internal Server error" })
     }
 })
+
+module.exports = router;
