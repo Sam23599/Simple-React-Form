@@ -1,5 +1,3 @@
-**README.md**
-
 # Simple React Form with Node.js Backend and React.js Frontend
 
 This repository contains a simple form application built with Node.js as the client and React.js as the server. This project demonstrates how to create a basic form using these technologies.
@@ -73,13 +71,20 @@ Once the project is running, you can fill out the form with your desired data an
 - **client/**: Contains the client-side code built with React.js.
 - **server/**: Contains the server-side code built with Node.js.
 
+
 ## Dependencies
 
 - **Node.js**: JavaScript runtime environment.
 - **React.js**: JavaScript library for building user interfaces.
+- **React DOM**: Entry point for React rendering.
+- **React Router DOM**: Declarative routing for React applications.
 - **Express.js**: Web application framework for Node.js.
-- **Webpack**: Module bundler for JavaScript applications.
-- **Babel**: JavaScript compiler for converting ECMAScript 2015+ code into a backwards-compatible version of JavaScript.
+- **Axios**: Promise-based HTTP client for the browser and Node.js.
+- **bcrypt**: Library for hashing passwords.
+- **Joi**: Object schema description language and validator for JavaScript objects.
+- **Mongoose**: MongoDB object modeling tool designed to work in an asynchronous environment.
+- **jsonwebtoken**: Implementation of JSON Web Tokens (JWT).
+- **dotenv**: Module that loads environment variables from a `.env` file into `process.env`.
 
 ## Contributing
 
